@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sample3</title>
+    <script src="jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="dimsemenov/dist/magnific-popup.css">
+    <script src="dimsemenov/dist/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        $(document).ready(function () {
+            $('.parent-container').magnificPopup({
+                delegate: 'a',
+                type: 'image'
+            });
+            $('#hide').hide();
+            $('#button').on('click', function () {
+                var text = $('#hide').is(':visible') ? 'Показать ещё' : 'Скрыть';
+                $('#button').text(text);
+                $('#hide').slideToggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="flex1">
+            <header>
+                <div class="menu">
+                    <a href="index.html">Главная</a>
+                    <a href="venice.html">Венеция</a>
+                    <a href="paris.html">Париж</a>
+                </div>
+            </header>
+            <h1>Личный сайт студента GeekBrains</h1>
+            <div class="parent-container content venice">
+                <a href="img/17823aa0b4aa7b73060a4f9983ed1529.jpg"><img src="img/17823aa0b4aa7b73060a4f9983ed1529.jpg"
+                        alt=""></a>
+                <a href="img/2-The-lights-of-Venice-Canal-at-night.jpg"><img
+                        src="img/2-The-lights-of-Venice-Canal-at-night.jpg" alt=""></a>
+                <a href="img/motto.net.ua-68752.jpg"><img src="img/motto.net.ua-68752.jpg" alt=""></a>
+                <a href="img/Venice-Italy-Wallpaper-9.jpg"><img src="img/Venice-Italy-Wallpaper-9.jpg" alt=""></a>
+                <a
+                    href="img/%D0%92%D0%B5%D0%BD%D0%B5%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B7%D0%B0%D0%BA%D0%B0%D1%82%D0%B5.jpg"><img
+                        src="img/%D0%92%D0%B5%D0%BD%D0%B5%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B7%D0%B0%D0%BA%D0%B0%D1%82%D0%B5.jpg"
+                        alt=""></a>
+                <a href="img/Venice-Italy-Wallpaper-9.jpg"><img src="img/Venice-Italy-Wallpaper-9.jpg" alt=""></a>
+            </div>
+            <div id="hide" class="parent-container content venice">
+                <a href="img/17823aa0b4aa7b73060a4f9983ed1529.jpg"><img src="img/17823aa0b4aa7b73060a4f9983ed1529.jpg"
+                        alt=""></a>
+                <a href="img/2-The-lights-of-Venice-Canal-at-night.jpg"><img
+                        src="img/2-The-lights-of-Venice-Canal-at-night.jpg" alt=""></a>
+                <a href="img/motto.net.ua-68752.jpg"><img src="img/motto.net.ua-68752.jpg" alt=""></a>
+                <a href="img/Venice-Italy-Wallpaper-9.jpg"><img src="img/Venice-Italy-Wallpaper-9.jpg" alt=""></a>
+                <a
+                    href="img/%D0%92%D0%B5%D0%BD%D0%B5%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B7%D0%B0%D0%BA%D0%B0%D1%82%D0%B5.jpg"><img
+                        src="img/%D0%92%D0%B5%D0%BD%D0%B5%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B7%D0%B0%D0%BA%D0%B0%D1%82%D0%B5.jpg"
+                        alt=""></a>
+                <a href="img/Venice-Italy-Wallpaper-9.jpg"><img src="img/Venice-Italy-Wallpaper-9.jpg" alt=""></a>
+            </div>
+            <a id="button" href="#">Показать ещё</a>
+        </div>
+        <footer>
+            Copyright © 2018 GeekBrains
+        </footer>
+    </div>
+
+</body>
+
+</html>
